@@ -88,5 +88,11 @@ pipeline {
                 // Deploy to production tasks
             }
         }
+        stage('Complete') {
+            steps {
+                echo 'New stage after commit..'
+                // Deploy to production tasks
+            }
+        }
     }
 }
